@@ -1,7 +1,7 @@
 // Setting up the gameBoard module
 const gameBoardModule = (function() {
-    const gameboard = [];
-    return{};
+    const gameBoard = ['O', 'X', 'O', 'X', 'X', 'O', 'X', 'O', 'X'];
+    return{gameBoard};
 })();
 
 // Setting up the displayController module
@@ -18,6 +18,15 @@ const createPlayer = (playerName, playerNumber, assignedXO) => {
     }
     return {getPlayerName, playerName, playerNumber, assignedXO};
 }
+
+const renderGameBoardContent = (() => {
+    const allBloc = document.querySelectorAll('.bloc');
+    for(i = 0; i < gameBoardModule.gameBoard.length; i++) {
+        allBloc[i].textContent = gameBoardModule.gameBoard[i];
+        console.log('show array content', gameBoardModule.gameBoard[i]);
+    }
+    return{};
+})();
 
 let Roua = createPlayer('Roua', 1, 'X');
 let Rambo = createPlayer('Rambo', 2, 'O');
