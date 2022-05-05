@@ -25,8 +25,18 @@ const renderGameBoardContent = (() => {
         allBloc[i].textContent = gameBoardModule.gameBoard[i];
         console.log('show array content', gameBoardModule.gameBoard[i]);
     }
-    return{};
+    // return{};
 })();
+
+
+// make a function which takes two parameters, X and O, which on the first time use X and for the following time use O
+// check if the spot is empty or not
+// for the first click store X in library, renderGameBoardContent
+//for the second click store O in library, renderGameBoardContent
+
+
 
 let Roua = createPlayer('Roua', 1, 'X');
 let Rambo = createPlayer('Rambo', 2, 'O');
+
+// when restart the game, should set the array to [];
