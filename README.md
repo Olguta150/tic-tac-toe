@@ -1,5 +1,7 @@
 # tic-tac-toe
 
+Live Preview: https://olguta150.github.io/tic-tac-toe/
+
 Assignment:
 
 1. Set up your project with HTML, CSS and Javascript files and get the Git repo all set up.
